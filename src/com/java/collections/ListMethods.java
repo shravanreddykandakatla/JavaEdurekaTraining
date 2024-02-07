@@ -34,7 +34,7 @@ public class ListMethods {
 
         System.out.println("to get the name at give index: "+names.get(1) );// to get the value based on index
 
-        System.out.println(names.remove("Shravan"));// this will true
+        System.out.println(names.remove("Shravan"));// this will return true
         System.out.println(names.remove(0));// this will remove the element and return the element removed.
 
         System.out.println(names+" | size: "+ names.size());
