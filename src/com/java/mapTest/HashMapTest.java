@@ -20,10 +20,10 @@ public class HashMapTest {
         Float bal = bank.get("Shreya");
         System.out.println("Account balance for Shreya: " + bal);
 
-        //To get all key values
+        //To get all keys
         Set<String> names = bank.keySet();
         for (String name : names) {
-            System.out.println(name);
+            System.out.println("all key values: "+name);
         }
         System.out.println("\n");
 

@@ -1,0 +1,20 @@
+Steps in JDBC application
+
+1) Initialize JDBC Driver of MySQL
+MySQL JDBC Driver= Drive.class - mysql-connector-j-x-x-x.jar
+Class.forName("com.mysql.cj.jdbc.Driver");// to initialize
+
+2) Connect to MySQL "MY_DB" Database
+Connection con=DriverManager.getConnection(String url, String userName, String password);
+
+3) Create an object for passing SQL queries to the connected DB
+Statement st= con.createStatement();
+
+4) Pass SQL queries to connected DB
+void st.execute(String DDl)
+int st.executeUpdate(String DML)
+ResultSet st.executeQuery(String DRL)
+
+5) Close the connection with DB
+con.close();
+
